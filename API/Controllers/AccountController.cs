@@ -2,8 +2,10 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using API.Data;
+using API.DTOs;
 using API.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -16,15 +18,17 @@ namespace API.Controllers
         }
 
         [HttpPost("register")] //use it if we want to add a new resource through our API endpoint
-                         //return an action results
-        public async Task<ActionResult<AppUser>> Register(string username, string password)
+                         
+        public async Task<ActionResult<AppUser>> Register(RegisterDto registerDto) //return an action results
         {
+            if (await UserExist(registerDto.Username)) return BadRequest("Username already taken");
+
             using var hmac = new HMACSHA512();
 
             var user = new AppUser
             {
-                UserName = username,
-                PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password)),
+                UserName = registerDto.Username.ToLower(),
+                PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
                 PasswordSalt = hmac.Key
             };
 
@@ -33,6 +37,11 @@ namespace API.Controllers
 
             return user;
         } 
+
+        private async Task<bool>UserExist(string username)
+        {
+            return await __context.Users.AnyAsync(x => x.UserName == username.ToLower());
+        }
 
 
 
