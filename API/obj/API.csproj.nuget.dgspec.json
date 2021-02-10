@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj": {}
+    "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj": {
+    "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
+        "projectPath": "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Akvilė\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\obj\\",
+        "outputPath": "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -70,6 +70,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
             }
           },
           "imports": [
