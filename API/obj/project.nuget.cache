@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "x2L/JSqJVKMw3oL5t4mhAOiuz6XqPAg366r0UUDNxTBCrmSsog29Hs/wUrldltBx5k256bbuacEwlZYhogNKxw==",
+  "dgSpecHash": "127CHeJOYeaLSuv+1DwAKTseLjD2cZE08I+U3dJ5/zzBvH5iiokwubcU9B5Sj9QQx0KmtWGRu1bop6hJVzxDbQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Akvilė\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\Akvilė\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.0\\microsoft.aspnetcore.authentication.jwtbearer.5.0.0.nupkg.sha512",
+    "C:\\Users\\Akvilė\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.3\\microsoft.aspnetcore.authentication.jwtbearer.5.0.3.nupkg.sha512",
     "C:\\Users\\Akvilė\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.0\\microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",
     "C:\\Users\\Akvilė\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Akvilė\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.1\\microsoft.data.sqlite.core.5.0.1.nupkg.sha512",

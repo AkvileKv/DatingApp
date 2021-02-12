@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj": {}
+    "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj": {
+    "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Akvilė\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\Akvilė\\Desktop\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -45,7 +45,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[5.0.0, )",
+              "version": "[5.0.3, )",
               "noWarn": [
                 "NU1605"
               ]
