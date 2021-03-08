@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Data
 {
     public class DataContext : DbContext
-    {   //dependency injection container:
+    {   //dependency injection container
         public DataContext(DbContextOptions options) : base(options)
         {
         }

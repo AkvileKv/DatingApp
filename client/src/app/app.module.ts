@@ -29,9 +29,9 @@ import { SharedModule } from './_modules/shared.module';
     MessagesComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, // for single page application (to add or display in browser)
     AppRoutingModule,
-    HttpClientModule,
+    HttpClientModule, // to fetch the data and display on the page
     BrowserAnimationsModule,
     FormsModule,
     SharedModule

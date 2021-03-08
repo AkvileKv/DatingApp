@@ -26,6 +26,7 @@ namespace API
     {
         private readonly IConfiguration _config;
 
+        //configuration are injecting into the Startup class
         public Startup(IConfiguration config)
         {
             _config = config;
@@ -43,10 +44,10 @@ namespace API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            // if (env.IsDevelopment())
+            // {
+            //     app.UseDeveloperExceptionPage();
+            // }
 
             app.UseHttpsRedirection();
 
@@ -60,7 +61,7 @@ namespace API
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers(); // takes a look inside our controllers to see what endpoints are available
             });
         }
     }
