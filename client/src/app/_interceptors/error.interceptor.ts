@@ -46,9 +46,12 @@ export class ErrorInterceptor implements HttpInterceptor {
             this.router.navigateByUrl('/not-found'); //redirect to not found page
             break;
 
-            case 500:                           
+
+            case 500:   
+            console.log(error);                        
               const navigationExtras: NavigationExtras = {state: {error: error.errors}}; //exception that we get back from our API
               this.router.navigateByUrl('/server-error', navigationExtras);
+
               break;
 
             default:

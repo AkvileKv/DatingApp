@@ -23,7 +23,7 @@ namespace API.Controllers
         }
 
         [HttpGet("not-found")]
-        public ActionResult<AppUser> GetNotFound()
+        public ActionResult<AppUser> GetNotFound() //404
         {
             var thing = _context.Users.Find(-1); // looking for an unexisting thing (users with id = 1)
 
@@ -32,7 +32,7 @@ namespace API.Controllers
             return Ok(thing);
         }
 
-        [HttpGet("server-error")]
+        [HttpGet("server-error")] //500
         public ActionResult<string> GetServerError()
         {
 
@@ -44,7 +44,7 @@ namespace API.Controllers
 
         }
 
-        [HttpGet("bad-request")]
+        [HttpGet("bad-request")] //400
         public ActionResult<string> GetBadRequest()
         {
             return BadRequest("This was not a good request");

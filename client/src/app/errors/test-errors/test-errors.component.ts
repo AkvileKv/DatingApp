@@ -37,6 +37,7 @@ export class TestErrorsComponent implements OnInit {
     this.http.get(this.baseUrl + 'buggy/server-error').subscribe(response => {
       console.log(response); 
     }, error => {
+      // console.log("Here");
       console.log(error);
     });
   }

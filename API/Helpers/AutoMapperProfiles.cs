@@ -5,7 +5,7 @@ using API.Extensions;
 using AutoMapper;
 
 namespace API.Helpers
-{
+{   //helps map from one object to another
     public class AutoMapperProfiles : Profile
     {
         public AutoMapperProfiles()
