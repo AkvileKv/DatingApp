@@ -13,6 +13,7 @@ namespace API.Helpers
         {
             
            var resultContext = await next();
+            
             //to check if user is authenticated 
             if (!resultContext.HttpContext.User.Identity.IsAuthenticated) return;
 
